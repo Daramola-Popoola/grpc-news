@@ -1,0 +1,21 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:server:dev": "npx ts-node ./server/src/server.ts",
+    "start:client:dev": "npx ts-node ./client/src/client.ts",
+    "proto:server": "bash ./scripts/server_generate.sh"
+  },
+  "devDependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.2",
+    "dotenv": "^16.4.5",
+    "grpc-tools": "^1.12.4"
+  }
+}
